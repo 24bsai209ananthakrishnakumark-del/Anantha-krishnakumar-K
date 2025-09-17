@@ -1,0 +1,140 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <title>Digital Portfolio</title>
+
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+  <!-- Header / Hero -->
+
+  <header class="hero">
+
+    <div class="hero-inner">
+
+      <h1 class="greeting">Hello </h1>
+      <p class="tagline">I’m Anantha — Web dev student &amp; maker.</p>
+
+      <div class="view-work-box" tabindex="0" role="button" id="viewWorkBtn">
+
+        View my work
+
+      </div>
+
+    </div>
+
+  </header>
+
+  <main class="container">
+
+    <!-- About -->
+
+    <section id="about" class="card about-card">
+
+      <h2>About Me</h2>
+
+      <div class="about-content">
+
+        <img src="https://i.ibb.co/kgRr5tp7/profile.png" alt="Profile photo" class="profile-photo">
+
+        <p class="about-line">I build small, useful web projects and learn everyday.</p>
+
+      </div>
+
+    </section>
+
+    <!-- Projects -->
+
+    <section id="projects" class="card">
+
+      <h2>Projects</h2>
+
+      <div class="projects-grid">
+
+        <article class="project">
+
+          <h3>Project 1</h3>
+
+          <p class="proj-name">Currency Converter</p>
+
+          <button class="proj-demo" data-project="currency">Open demo</button>
+
+        </article>
+
+        <article class="project">
+
+          <h3>Project 2</h3>
+
+          <p class="proj-name">Data box</p>
+
+          <button class="proj-demo" data-project="databox">Open demo</button>
+
+        </article>
+
+        <article class="project">
+
+          <h3>Project 3</h3>
+
+          <p class="proj-name">Digital Portfolio</p>
+
+          <button class="proj-demo" data-project="portfolio">Open demo</button>
+
+        </article>
+
+      </div>
+
+    </section>
+
+    <!-- Contact -->
+
+    <section id="contact" class="card contact-card">
+
+      <h2>Contact Me</h2>
+
+      <form id="contactForm" autocomplete="on">
+
+        <label class="sr-only" for="name">Name</label>
+
+        <input id="name" name="name" type="text" placeholder="NAME" value="Anantha Krishna Kumar" required>
+
+        <label class="sr-only" for="email">Email</label>
+
+        <input id="email" name="email" type="email" placeholder="EMAIL" value="24bsai209ananthakrishnakumark@skacas.ac.in" required>
+
+        <label class="sr-only" for="phone">Number</label>
+
+        <input id="phone" name="phone" type="tel" placeholder="NUMBER" value="1234567890" required>
+
+        <textarea id="message" name="message" rows="4" placeholder="Your message (optional)"></textarea>
+
+        <button type="submit" class="send-btn">Send</button>
+
+      </form>
+
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+
+  <footer class="footer">
+
+    <p>© <span id="year"></span> Anantha Krishna Kumar — Digital Portfolio</p>
+
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
